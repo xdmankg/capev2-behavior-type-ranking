@@ -5,7 +5,7 @@ configuration,M_SEQ_CAND_PRESENCE,Type-specific LR + relation indicator,Type-spe
 configuration,M_SEQ_CAND_RES,Type-specific LR + relation aggregates,Type-specific regression with appended relation aggregates.
 configuration,M1,Frequency baseline,Deterministic marginal training-frequency baseline.
 configuration,Conditional frequency,Conditional frequency baseline,Deterministic frequency baseline conditioned on the observed type set.
-split,OOF,OOF,Three forward-chaining evaluations of later training blocks.
+split,OOF,Forward-chaining evaluation,Three forward-chaining evaluations of later training blocks.
 split,Validation,Validation,Held-out validation split.
 split,Test,Test,Primary held-out test evaluation in the execution summaries.
 fold,1,Fold 1,Evaluates chronological block 2 using preceding blocks.
