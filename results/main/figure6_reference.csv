@@ -1,0 +1,17 @@
+model,condition,reference,n
+Type-specific LR + relation indicator,RAW_SCORE,0.92958,102685
+Type-specific LR + relation indicator,OBSERVED_EXCLUDED,0.935216,102685
+Type-specific LR + relation aggregates,RAW_SCORE,0.929616,102685
+Type-specific LR + relation aggregates,OBSERVED_EXCLUDED,0.935124,102685
+Type-specific LR,RAW_SCORE,0.891084,102685
+Type-specific LR,OBSERVED_EXCLUDED,0.907402,102685
+Linear relation model,RAW_SCORE,0.842091,102685
+Linear relation model,OBSERVED_EXCLUDED,0.903343,102685
+Graph-correction model,RAW_SCORE,0.863412,102685
+Graph-correction model,OBSERVED_EXCLUDED,0.900608,102685
+Pooled LR,RAW_SCORE,0.585729,102685
+Pooled LR,OBSERVED_EXCLUDED,0.889108,102685
+Type-identifier model,RAW_SCORE,0.672061,102685
+Type-identifier model,OBSERVED_EXCLUDED,0.810698,102685
+Random ranking,RAW_SCORE,0.387981,102685
+Random ranking,OBSERVED_EXCLUDED,0.597564,102685

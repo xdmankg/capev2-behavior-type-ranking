@@ -1,0 +1,9 @@
+Observation ratio,Graph-correction eligibility condition,Evaluation cases,Mean ΔMRR
+0.10,Not satisfied,1674,+0.001145
+0.10,Satisfied,5407,+0.009736
+0.20,Not satisfied,1484,+0.001416
+0.20,Satisfied,5862,+0.012443
+0.30,Not satisfied,1282,+0.003569
+0.30,Satisfied,6076,+0.014507
+0.50,Not satisfied,1097,−0.036725
+0.50,Satisfied,6273,+0.014813

@@ -1,0 +1,42 @@
+category,stored_id,paper_name,meaning
+configuration,M3_CI,Pooled LR,Shared logistic regression across case-type pairs.
+configuration,M_SEQ_CAND,Type-specific LR,Separate logistic regression for each scored type using the base features.
+configuration,M_SEQ_CAND_PRESENCE,Type-specific LR + relation indicator,Type-specific regression with a binary relation-feature indicator.
+configuration,M_SEQ_CAND_RES,Type-specific LR + relation aggregates,Type-specific regression with appended relation aggregates.
+configuration,M1,Frequency baseline,Deterministic marginal training-frequency baseline.
+configuration,Conditional frequency,Conditional frequency baseline,Deterministic frequency baseline conditioned on the observed type set.
+split,OOF,OOF,Three forward-chaining evaluations of later training blocks.
+split,Validation,Validation,Held-out validation split.
+split,Test,Test,Primary held-out test evaluation in the execution summaries.
+fold,1,Fold 1,Evaluates chronological block 2 using preceding blocks.
+fold,2,Fold 2,Evaluates chronological block 3 using preceding blocks.
+fold,3,Fold 3,Evaluates chronological block 4 using preceding blocks.
+fold,final,Final training,Final-fit models applied to the validation or test split.
+ranking,RAW_SCORE,Raw score,Rank all candidate types in descending raw score order.
+ranking,OBSERVED_EXCLUDED,Observed types last,Assign observed types a ranking score of negative infinity and stably rank all 17 types. Illustrative unseen-type recommendation lists omit observed types at display time.
+contrast,PRESENCE_minus_SEQ,Type-specific LR + relation indicator minus Type-specific LR,Primary test MRR for Type-specific LR + relation indicator minus primary test MRR for Type-specific LR.
+contrast,RES_minus_PRESENCE,Type-specific LR + relation aggregates minus Type-specific LR + relation indicator,Primary test MRR for Type-specific LR + relation aggregates minus primary test MRR for Type-specific LR + relation indicator.
+contrast,RES_minus_SEQ,Type-specific LR + relation aggregates minus Type-specific LR,Primary test MRR for Type-specific LR + relation aggregates minus primary test MRR for Type-specific LR.
+contrast,SEQ_minus_SHARED,Type-specific LR minus Pooled LR,Primary test MRR for Type-specific LR minus primary test MRR for Pooled LR.
+contrast,SEQ_minus_FREQ,Type-specific LR minus Frequency baseline,Primary test MRR for Type-specific LR minus primary test MRR for Frequency baseline.
+training record,model_B,Observed-status configuration,Base type-specific LR with the candidate observation-status indicator.
+training record,model_C,Relation-feature indicator configuration,Type-specific LR with the relation-feature indicator.
+training record,B1_C0,Observed only,Candidate observed-status indicator = 1 and relation-feature indicator = 0.
+training record,B0_C1,Relation indicator only,Candidate observed-status indicator = 0 and relation-feature indicator = 1.
+behavior type,credential_crypto,Credentials and cryptography,Candidate at frozen position 1.
+behavior type,file_create_write,File creation and writing,Candidate at frozen position 2.
+behavior type,file_move_delete,File moving and deletion,Candidate at frozen position 3.
+behavior type,file_query_read,File querying and reading,Candidate at frozen position 4.
+behavior type,memory_allocate_map,Memory allocation and mapping,Candidate at frozen position 5.
+behavior type,memory_write_protect,Memory writing and protection,Candidate at frozen position 6.
+behavior type,module_load,Module loading,Candidate at frozen position 7.
+behavior type,network_resolve_connect,Network name resolution and connection,Candidate at frozen position 8.
+behavior type,network_send_receive,Network sending and receiving,Candidate at frozen position 9.
+behavior type,process_query_access,Process querying and access,Candidate at frozen position 10.
+behavior type,process_thread_create,Process and thread creation,Candidate at frozen position 11.
+behavior type,registry_create_write,Registry creation and writing,Candidate at frozen position 12.
+behavior type,registry_delete,Registry deletion,Candidate at frozen position 13.
+behavior type,registry_query_read,Registry querying and reading,Candidate at frozen position 14.
+behavior type,service_task_sync,Service and task synchronization,Candidate at frozen position 15.
+behavior type,symbol_resolution,Symbol resolution,Candidate at frozen position 16.
+behavior type,timing_wait,Timing and waiting,Candidate at frozen position 17.

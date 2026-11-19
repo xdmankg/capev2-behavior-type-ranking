@@ -1,0 +1,136 @@
+file,row_key_or_unit,column,read_dtype,meaning,missing
+data/execution_population.csv,split,split,str,"OOF = forward chaining, Validation or Test; auxiliary and training population rows are labeled separately.",No missing values
+data/execution_population.csv,split,all_executions,int64,all executions,No missing values
+data/execution_population.csv,split,at_least_one_eligible,int64,at least one eligible,No missing values
+data/execution_population.csv,split,zero_eligible,int64,zero eligible,No missing values
+data/executions.parquet,"split, fold, execution_key, configuration, seed",n_eligible,int64,Eligible cases for the execution.,No missing values
+data/executions.parquet,"split, fold, execution_key, configuration, seed",n_target_positive,int64,Eligible cases with at least one target.,No missing values
+data/executions.parquet,"split, fold, execution_key, configuration, seed",rr_sum,float64,"Sum of per-case reciprocal ranks, including zero for empty targets.",No missing values
+data/executions.parquet,"split, fold, execution_key, configuration, seed",recall3_sum,float64,Sum of per-positive-case Recall@3; zero if there are no positives.,No missing values
+data/executions.parquet,"split, fold, execution_key, configuration, seed",split,str,"OOF = forward chaining, Validation or Test; auxiliary and training population rows are labeled separately.",No missing values
+data/executions.parquet,"split, fold, execution_key, configuration, seed",fold,str,"Folds 1, 2 and 3 evaluate chronological blocks 2, 3 and 4, respectively. final identifies final-fit evaluations.",No missing values
+data/executions.parquet,"split, fold, execution_key, configuration, seed",configuration,str,Frozen configuration identifier; M1 is the fixed frequency baseline.,No missing values
+data/executions.parquet,"split, fold, execution_key, configuration, seed",seed,int64,Training seed 20260716 to 20260720; 0 denotes a deterministic baseline (one row per execution).,No missing values
+data/executions.parquet,"split, fold, execution_key, configuration, seed",in_primary_set,bool,True for the primary Test set. Auxiliary test membership is not encoded.,No missing values
+data/executions.parquet,"split, fold, execution_key, configuration, seed",execution_key,str,Stable identifier across configurations and seeds. Sorting fixed-width keys recovers the original paired execution order for Table 7.,No missing values
+data/figure6_sums.csv,"configuration, fold, condition, seed",configuration,str,Frozen configuration identifier; M1 is the fixed frequency baseline.,No missing values
+data/figure6_sums.csv,"configuration, fold, condition, seed",fold,int64,"Folds 1, 2 and 3 evaluate chronological blocks 2, 3 and 4, respectively. final identifies final-fit evaluations.",No missing values
+data/figure6_sums.csv,"configuration, fold, condition, seed",condition,str,condition,No missing values
+data/figure6_sums.csv,"configuration, fold, condition, seed",seed,int64,Training seed 20260716 to 20260720; 0 denotes a deterministic baseline (one row per execution).,No missing values
+data/figure6_sums.csv,"configuration, fold, condition, seed",n,int64,Eligible cases.,No missing values
+data/figure6_sums.csv,"configuration, fold, condition, seed",rr,float64,Reciprocal rank or its sum/mean as specified by the file unit.,No missing values
+data/figure8_labels.csv,"panel, split, ratio, condition",panel,str,panel,No missing values
+data/figure8_labels.csv,"panel, split, ratio, condition",split,str,"OOF = forward chaining, Validation or Test; auxiliary and training population rows are labeled separately.",No missing values
+data/figure8_labels.csv,"panel, split, ratio, condition",ratio,float64,ratio,No missing values
+data/figure8_labels.csv,"panel, split, ratio, condition",condition,str,condition,No missing values
+data/figure8_labels.csv,"panel, split, ratio, condition",n,int64,Eligible cases.,No missing values
+data/figure8_labels.csv,"panel, split, ratio, condition",delta,float64,delta,No missing values
+data/populations.csv,"split, quantity",split,str,"OOF = forward chaining, Validation or Test; auxiliary and training population rows are labeled separately.",No missing values
+data/populations.csv,"split, quantity",quantity,str,quantity,No missing values
+data/populations.csv,"split, quantity",direct,int64,direct,No missing values
+data/table4_printed.csv,One published row; retain printed order,Population,str,Population,No missing values
+data/table4_printed.csv,One published row; retain printed order,Executions used for case generation,str,Executions used for case generation,No missing values
+data/table4_printed.csv,One published row; retain printed order,Generated cases,str,Generated cases,No missing values
+data/table4_printed.csv,One published row; retain printed order,Eligible cases,str,Eligible cases,No missing values
+data/table4_printed.csv,One published row; retain printed order,Target-positive cases,str,Target-positive cases,No missing values
+data/table4_printed.csv,One published row; retain printed order,Empty-target cases,int64,Empty-target cases,No missing values
+data/table6_printed.csv,One published row; retain printed order,Configuration,str,Configuration,No missing values
+data/table6_printed.csv,One published row; retain printed order,"MRR,forward chaining",str,"MRR,forward chaining",No missing values
+data/table6_printed.csv,One published row; retain printed order,"MRR,validation",float64,"MRR,validation",No missing values
+data/table6_printed.csv,One published row; retain printed order,"MRR,test",float64,"MRR,test",No missing values
+data/table6_printed.csv,One published row; retain printed order,"Target-positiveMRR, test",float64,"Target-positiveMRR, test",No missing values
+data/table6_printed.csv,One published row; retain printed order,"Recall@3,test",float64,"Recall@3,test",No missing values
+data/table7_printed.csv,One published row; retain printed order,Contrast,str,Contrast,No missing values
+data/table7_printed.csv,One published row; retain printed order,ΔMRR,str,ΔMRR,No missing values
+data/table7_printed.csv,One published row; retain printed order,Pointwise 95% CI,str,Pointwise 95% CI,No missing values
+data/table7_printed.csv,One published row; retain printed order,Seeds with ΔMRR > 0,str,Seeds with ΔMRR > 0,No missing values
+data/table7_printed.csv,One published row; retain printed order,Decision,str,Decision,No missing values
+data/table7_reference.csv,contrast,contrast,str,contrast,No missing values
+data/table7_reference.csv,contrast,delta,float64,delta,No missing values
+data/table7_reference.csv,contrast,low,float64,low,No missing values
+data/table7_reference.csv,contrast,high,float64,high,No missing values
+data/table7_reference.csv,contrast,positive_seeds,int64,positive seeds,No missing values
+data/table7_reference.csv,contrast,decision,bool,decision,No missing values
+data/table7_reference.csv,contrast,n,int64,Eligible cases.,No missing values
+data/tableS23_printed.csv,One published row; retain printed order,Observation ratio,float64,Observation ratio,No missing values
+data/tableS23_printed.csv,One published row; retain printed order,Graph-correction eligibility condition,str,Graph-correction eligibility condition,No missing values
+data/tableS23_printed.csv,One published row; retain printed order,Evaluation cases,int64,Evaluation cases,No missing values
+data/tableS23_printed.csv,One published row; retain printed order,Mean ΔMRR,str,Mean ΔMRR,No missing values
+data/tableS26_printed.csv,One published row; retain printed order,Group,str,Group,No missing values
+data/tableS26_printed.csv,One published row; retain printed order,Condition / target observation ratio,str,Condition / target observation ratio,No missing values
+data/tableS26_printed.csv,One published row; retain printed order,Eligible,str,Eligible,No missing values
+data/tableS26_printed.csv,One published row; retain printed order,[Type-specific LR + relation indicator] − [Type-specific LR],str,[Type-specific LR + relation indicator] − [Type-specific LR],No missing values
+data/tableS26_printed.csv,One published row; retain printed order,[Type-specific LR] − [Pooled LR],str,[Type-specific LR] − [Pooled LR],No missing values
+data/tableS26_printed.csv,One published row; retain printed order,[Type-specific LR] − [Frequency baseline],float64,[Type-specific LR] − [Frequency baseline],No missing values
+data/tableS54_printed.csv,One published row; retain printed order,Split,str,Split,No missing values
+data/tableS54_printed.csv,One published row; retain printed order,Target observation ratio,float64,Target observation ratio,No missing values
+data/tableS54_printed.csv,One published row; retain printed order,Graph-correction eligibility condition,int64,Graph-correction eligibility condition,No missing values
+data/tableS54_printed.csv,One published row; retain printed order,Eligible cases,int64,Eligible cases,No missing values
+data/tableS54_printed.csv,One published row; retain printed order,[Type-specific LR] − [Pooled LR],str,[Type-specific LR] − [Pooled LR],No missing values
+data/tableS54_printed.csv,One published row; retain printed order,[Type-specific LR + relation indicator] − [Type-specific LR],str,[Type-specific LR + relation indicator] − [Type-specific LR],No missing values
+results/main/figure10.csv,"case, model, seed",case,str,case,No missing values
+results/main/figure10.csv,"case, model, seed",seed,int64,Training seed 20260716 to 20260720; 0 denotes a deterministic baseline (one row per execution).,No missing values
+results/main/figure10.csv,"case, model, seed",model,str,model,No missing values
+results/main/figure10.csv,"case, model, seed",top5,str,"First five type IDs in rank order, separated by vertical bars.",No missing values
+results/main/figure10.csv,"case, model, seed",target_at_top5,str,target at top5,No missing values
+results/main/figure10.csv,"case, model, seed",targets,str,targets,No missing values
+results/main/figure10.csv,"case, model, seed",first,float64,Rank of the first target; absent with no target.,No target
+results/main/figure10.csv,"case, model, seed",RR,float64,RR,No missing values
+results/main/figure10.csv,"case, model, seed",module_load_rank,int64,module load rank,No missing values
+results/main/figure10.csv,"case, model, seed",network_resolve_connect_rank,int64,network resolve connect rank,No missing values
+results/main/figure10.csv,"case, model, seed",observed_calls,int64,observed calls,No missing values
+results/main/figure10.csv,"case, model, seed",future_calls,int64,future calls,No missing values
+results/main/figure6_reference.csv,"model, condition",model,str,model,No missing values
+results/main/figure6_reference.csv,"model, condition",condition,str,condition,No missing values
+results/main/figure6_reference.csv,"model, condition",reference,float64,reference,No missing values
+results/main/figure6_reference.csv,"model, condition",n,int64,Eligible cases.,No missing values
+results/posthoc/fixed_budgets.csv,"k, model, population",k,int64,Call budget.,No missing values
+results/posthoc/fixed_budgets.csv,"k, model, population",model,str,model,No missing values
+results/posthoc/fixed_budgets.csv,"k, model, population",rr,float64,Reciprocal rank or its sum/mean as specified by the file unit.,No missing values
+results/posthoc/fixed_budgets.csv,"k, model, population",positive_rr,float64,Mean RR among target-positive cases.,No missing values
+results/posthoc/fixed_budgets.csv,"k, model, population",recall3,float64,recall3,No missing values
+results/posthoc/fixed_budgets.csv,"k, model, population",executions,int64,executions,No missing values
+results/posthoc/fixed_budgets.csv,"k, model, population",population,str,population,No missing values
+results/reproduction/indicator_inputs.csv,"partition, candidate, branch",partition,str,partition,No missing values
+results/reproduction/indicator_inputs.csv,"partition, candidate, branch",candidate,str,candidate,No missing values
+results/reproduction/indicator_inputs.csv,"partition, candidate, branch",branch,str,branch,No missing values
+results/reproduction/indicator_inputs.csv,"partition, candidate, branch",label_rows,int64,label rows,No missing values
+results/reproduction/indicator_inputs.csv,"partition, candidate, branch",solver_rows,int64,solver rows,No missing values
+results/reproduction/indicator_inputs.csv,"partition, candidate, branch",weight_denominator,float64,weight denominator,No missing values
+results/reproduction/indicator_inputs.csv,"partition, candidate, branch",B1_C0,int64,Solver rows with observed indicator one and relation indicator zero.,No missing values
+results/reproduction/indicator_inputs.csv,"partition, candidate, branch",B0_C1,int64,Solver rows with observed indicator zero and relation indicator one.,No missing values
+results/reproduction/indicator_inputs.csv,"partition, candidate, branch",weight_B1_C0,float64,weight B1 C0,No missing values
+results/reproduction/indicator_inputs.csv,"partition, candidate, branch",weight_B0_C1,float64,weight B0 C1,No missing values
+results/reproduction/indicator_inputs.csv,"partition, candidate, branch",fraction,float64,fraction,No missing values
+results/main/table6_comparison.csv,One reported comparison or cell,item,str,item,Complete
+results/main/table6_comparison.csv,One reported comparison or cell,model,str,model,Complete
+results/main/table6_comparison.csv,One reported comparison or cell,split,str,split,Complete
+results/main/table6_comparison.csv,One reported comparison or cell,metric,str,metric,Unreported cell or field not applicable
+results/main/table6_comparison.csv,One reported comparison or cell,printed,str,printed,Complete
+results/main/table6_comparison.csv,One reported comparison or cell,actual,float64,Recalculated from the execution summaries.,Unreported cell or field not applicable
+results/main/table6_comparison.csv,One reported comparison or cell,difference,float64,"Table 6: computed minus printed. Table 7: computed minus the full-precision archived reference, in delta, lower, upper order.",Unreported cell or field not applicable
+results/main/table6_comparison.csv,One reported comparison or cell,denominator,float64,denominator,Unreported cell or field not applicable
+results/main/table7_comparison.csv,One reported comparison or cell,item,str,item,Complete
+results/main/table7_comparison.csv,One reported comparison or cell,contrast,str,contrast,Complete
+results/main/table7_comparison.csv,One reported comparison or cell,denominator,int64,denominator,Complete
+results/main/table7_comparison.csv,One reported comparison or cell,expected,str,"Manuscript values in delta, lower, upper order.",Complete
+results/main/table7_comparison.csv,One reported comparison or cell,actual,str,Recalculated from the execution summaries.,Complete
+results/main/table7_comparison.csv,One reported comparison or cell,difference,str,"Table 6: computed minus printed. Table 7: computed minus the full-precision archived reference, in delta, lower, upper order.",Complete
+results/main/table7_comparison.csv,One reported comparison or cell,positive_seeds,int64,positive seeds,Complete
+results/main/table7_comparison.csv,One reported comparison or cell,decision,bool,decision,Complete
+results/main/table7_comparison.csv,One reported comparison or cell,printed_positive_seeds,int64,printed positive seeds,Complete
+results/main/table7_comparison.csv,One reported comparison or cell,printed_decision,bool,printed decision,Complete
+docs/names.csv,"category, stored_id",category,str,category,No missing values
+docs/names.csv,"category, stored_id",stored_id,str,stored id,No missing values
+docs/names.csv,"category, stored_id",paper_name,str,paper name,No missing values
+docs/names.csv,"category, stored_id",meaning,str,meaning,No missing values
+data/section_s4_printed.csv,"k, model",k,int64,k,No missing values
+data/section_s4_printed.csv,"k, model",model,str,model,No missing values
+data/section_s4_printed.csv,"k, model",printed_executions,int64,printed executions,No missing values
+data/section_s4_printed.csv,"k, model",printed_mrr,float64,printed mrr,No missing values
+results/posthoc/section_s4_comparison.csv,"budget and model in the eligible population",item,str,item,No missing values
+results/posthoc/section_s4_comparison.csv,"budget and model in the eligible population",budget,int64,budget,No missing values
+results/posthoc/section_s4_comparison.csv,"budget and model in the eligible population",model,str,model,No missing values
+results/posthoc/section_s4_comparison.csv,"budget and model in the eligible population",executions,int64,executions,No missing values
+results/posthoc/section_s4_comparison.csv,"budget and model in the eligible population",stored_MRR,float64,stored_MRR,No missing values
+results/posthoc/section_s4_comparison.csv,"budget and model in the eligible population",printed_MRR,float64,printed_MRR,No missing values

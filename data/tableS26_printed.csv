@@ -1,0 +1,15 @@
+Group,Condition / target observation ratio,Eligible,[Type-specific LR + relation indicator] − [Type-specific LR],[Type-specific LR] − [Pooled LR],[Type-specific LR] − [Frequency baseline]
+Condition satisfied,Not satisfied,7193,+0.007155,+0.017186,+0.439678
+Condition satisfied,Satisfied,"22,029",+0.021552,−0.001847,+0.047900
+Target observation ratio,0.10,7241,+0.007046,+0.015743,+0.160078
+Target observation ratio,0.20,7314,+0.017546,+0.008808,+0.150995
+Target observation ratio,0.30,7329,+0.025393,−0.002529,+0.151223
+Target observation ratio,0.50,7338,+0.021909,−0.010488,+0.115287
+Target observation ratio × condition,0.10|Not satisfied,2555,+0.004866,+0.016842,+0.376427
+Target observation ratio × condition,0.10|Satisfied,4686,+0.008234,+0.015144,+0.042115
+Target observation ratio × condition,0.20|Not satisfied,1805,+0.018717,+0.018259,+0.473202
+Target observation ratio × condition,0.20|Satisfied,5509,+0.017163,+0.005712,+0.045426
+Target observation ratio × condition,0.30|Not satisfied,1619,+0.010227,+0.018406,+0.478038
+Target observation ratio × condition,0.30|Satisfied,5710,+0.029694,−0.008465,+0.058558
+Target observation ratio × condition,0.50|Not satisfied,1214,−0.009316,+0.014690,+0.471792
+Target observation ratio × condition,0.50|Satisfied,6124,+0.028099,−0.015479,+0.044615

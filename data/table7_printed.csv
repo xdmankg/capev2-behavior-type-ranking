@@ -1,0 +1,6 @@
+Contrast,ΔMRR,Pointwise 95% CI,Seeds with ΔMRR > 0,Decision
+Adding the relation-feature indicator,0.018008,"[0.015985, 0.020085]",5/5,Met
+Replacing the indicator with aggregates,−0.000096,"[−0.000264, 0.000071]",0/5,Not met
+Adding relation aggregates,0.017912,"[0.015903, 0.019954]",5/5,Met
+[Type-specific LR] − [Pooled LR],0.002838,"[−0.000685, 0.006482]",5/5,Not met
+[Type-specific LR] − [Frequency baseline],0.144336,"[0.138396, 0.150695]",5/5,Met

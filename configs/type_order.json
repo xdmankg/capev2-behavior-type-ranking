@@ -1,0 +1,90 @@
+{
+  "position_base": 1,
+  "types": [
+    {
+      "position": 1,
+      "type_id": "credential_crypto",
+      "paper_name": "Credentials and cryptography"
+    },
+    {
+      "position": 2,
+      "type_id": "file_create_write",
+      "paper_name": "File creation and writing"
+    },
+    {
+      "position": 3,
+      "type_id": "file_move_delete",
+      "paper_name": "File moving and deletion"
+    },
+    {
+      "position": 4,
+      "type_id": "file_query_read",
+      "paper_name": "File querying and reading"
+    },
+    {
+      "position": 5,
+      "type_id": "memory_allocate_map",
+      "paper_name": "Memory allocation and mapping"
+    },
+    {
+      "position": 6,
+      "type_id": "memory_write_protect",
+      "paper_name": "Memory writing and protection"
+    },
+    {
+      "position": 7,
+      "type_id": "module_load",
+      "paper_name": "Module loading"
+    },
+    {
+      "position": 8,
+      "type_id": "network_resolve_connect",
+      "paper_name": "Network name resolution and connection"
+    },
+    {
+      "position": 9,
+      "type_id": "network_send_receive",
+      "paper_name": "Network sending and receiving"
+    },
+    {
+      "position": 10,
+      "type_id": "process_query_access",
+      "paper_name": "Process querying and access"
+    },
+    {
+      "position": 11,
+      "type_id": "process_thread_create",
+      "paper_name": "Process and thread creation"
+    },
+    {
+      "position": 12,
+      "type_id": "registry_create_write",
+      "paper_name": "Registry creation and writing"
+    },
+    {
+      "position": 13,
+      "type_id": "registry_delete",
+      "paper_name": "Registry deletion"
+    },
+    {
+      "position": 14,
+      "type_id": "registry_query_read",
+      "paper_name": "Registry querying and reading"
+    },
+    {
+      "position": 15,
+      "type_id": "service_task_sync",
+      "paper_name": "Service and task synchronization"
+    },
+    {
+      "position": 16,
+      "type_id": "symbol_resolution",
+      "paper_name": "Symbol resolution"
+    },
+    {
+      "position": 17,
+      "type_id": "timing_wait",
+      "paper_name": "Timing and waiting"
+    }
+  ]
+}

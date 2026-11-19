@@ -1,0 +1,7 @@
+Configuration,"MRR,forward chaining","MRR,validation","MRR,test","Target-positiveMRR, test","Recall@3,test"
+Pooled LR,0.8891,0.8783,0.8987,0.9357,0.7666
+Type-specific LR,0.9074,0.9226,0.9015,0.9386,0.7625
+Type-specific LR + relation indicator,0.9352,0.9321,0.9195,0.9574,0.7787
+Type-specific LR + relation aggregates,0.9351,0.9320,0.9194,0.9573,0.7787
+Frequency baseline,—,0.7905,0.7572,0.7884,0.6242
+Conditional frequency baseline,0.9307,0.9379,0.9433,0.9821,0.7946

@@ -1,0 +1,24 @@
+{
+  "model_B": {
+    "seeds": [
+      20260716,
+      20260717,
+      20260718,
+      20260719,
+      20260720
+    ],
+    "final_classifiers": 85
+  },
+  "model_C": {
+    "seed": 20260716,
+    "scope": "Final training to Test",
+    "executions": 7340,
+    "generated_cases": 29360,
+    "types": 17,
+    "score_elements": 499120,
+    "max_abs": 0.0,
+    "exceedances": 0,
+    "rank_different_all": 0,
+    "rr_different_all": 0
+  }
+}

@@ -1,0 +1,26 @@
+split,quantity,direct
+Test,executions,7340
+Test,generated,29360
+Test,eligible,29222
+Test,positive,28066
+Test,empty,1156
+Test auxiliary,executions,7330
+Test auxiliary,generated,29320
+Test auxiliary,eligible,29182
+Test auxiliary,positive,28028
+Test auxiliary,empty,1154
+Validation,executions,7370
+Validation,generated,29480
+Validation,eligible,29155
+Validation,positive,27935
+Validation,empty,1220
+OOF,executions,25714
+OOF,generated,102856
+OOF,eligible,102685
+OOF,positive,98318
+OOF,empty,4367
+Training,executions,34266
+Training,generated,137064
+Training,eligible,136786
+Training,positive,130344
+Training,empty,6442

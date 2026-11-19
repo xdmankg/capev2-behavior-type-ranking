@@ -1,0 +1,6 @@
+Population,Executions used for case generation,Generated cases,Eligible cases,Target-positive cases,Empty-target cases
+Training split,"34,266","137,064","136,786","130,344",6442
+Forward-chaining evaluation,"25,714","102,856","102,685","98,318",4367
+Validation split,7370,"29,480","29,155","27,935",1220
+Test split: primary evaluation set,7340,"29,360","29,222","28,066",1156
+Test split: auxiliary evaluation set,7330,"29,320","29,182","28,028",1154

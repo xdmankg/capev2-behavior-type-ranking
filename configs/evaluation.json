@@ -1,0 +1,27 @@
+{
+  "seeds": [
+    20260716,
+    20260717,
+    20260718,
+    20260719,
+    20260720
+  ],
+  "observed_types": "last",
+  "tie_break": "frozen candidate order",
+  "unit": "execution",
+  "replicates": 2000,
+  "generator": "PCG64",
+  "bootstrap_seed": 20260808,
+  "percentiles": [
+    2.5,
+    97.5
+  ],
+  "percentile_method": "linear",
+  "criteria": {
+    "coverage": 1,
+    "minimum_mean": 0.01,
+    "strict_lower_bound": 0,
+    "minimum_positive_seeds": 4
+  },
+  "type_order": "configs/type_order.json"
+}
