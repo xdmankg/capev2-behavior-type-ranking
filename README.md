@@ -2,7 +2,7 @@
 
 Companion data and verification code for *Ranking Subsequent Malware Behavior Types Using Type-Specific Logistic Regression with API Call Features*.
 
-Download the release attachment **capev2-behavior-type-ranking-v1.0.0.zip**, extract it, and open a terminal in the extracted folder containing this README. The original [Avast-CTU Public CAPEv2 Dataset](https://github.com/avast/avast-ctu-cape-dataset) is distributed by its providers. This study used the full reports.
+Run the verification commands below from the repository root (the folder containing this README). The original [Avast-CTU Public CAPEv2 Dataset](https://github.com/avast/avast-ctu-cape-dataset) is distributed by its providers. This study used the full reports.
 
 With Python 3.12.13 and pip:
 
